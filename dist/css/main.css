@@ -1,0 +1,146 @@
+:root {
+  --clr-gray-light: #d7dfe2;
+  --clr-gray-med: #616b74;
+  --clr-gray-dark: #414b56;
+  --clr-link: #4d97b2;
+  --clr-popular: #ef257a;
+  --clr-technology: #651fff;
+  --clr-psychology: #e85808;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2rem;
+  color: var(--clr-gray-dark);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 20px var(--clr-gray-light);
+  box-shadow: 0px 2px 20px var(--clr-gray-light);
+  background: white;
+  border-radius: 0.5rem;
+  position: relative;
+  width: 800px;
+  margin: 1rem;
+  -webkit-transition: 250ms all ease-in-out;
+  transition: 250ms all ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 2px 40px var(--clr-gray-light);
+  box-shadow: 0px 2px 40px var(--clr-gray-light);
+}
+
+.banner-img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 14rem;
+  width: 100%;
+}
+
+.category-tag {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  background: red;
+  padding: 0.5rem 1.3rem 0.5rem 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  border-radius: 0 2rem 2rem 0;
+}
+
+.popular {
+  background: var(--clr-popular);
+}
+
+.technology {
+  background: var(--clr-technology);
+}
+
+.psychology {
+  background: var(--clr-psychology);
+}
+
+.card-body {
+  margin: 15rem 1rem 1rem 1rem;
+}
+
+.blog-hashtag {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--clr-link);
+}
+
+.blog-title {
+  line-height: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.blog-description {
+  color: var(--clr-gray-med);
+  font-size: 0.9rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-profile-info {
+  margin-left: 1rem;
+}
+
+.profile-name {
+  font-size: 1rem;
+}
+
+.profile-followers {
+  color: var(--clr-gray-med);
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */
